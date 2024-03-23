@@ -22,6 +22,9 @@ fn main() {
 
     println!("{}", greet());
     println!("{}", greetings("FOSSMeet24"));
+
+    let v: Vec<i32> = vec![1, 2, 3];
+    println!("Vector V = {}", format!("{:?}", v));
 }
 
 fn greet() -> String {
