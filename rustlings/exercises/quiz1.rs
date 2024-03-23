@@ -31,3 +31,7 @@ fn verify_test() {
     assert_eq!(41, price3);
     assert_eq!(65, price4);
 }
+
+fn calculate_price_of_apples(count: i32) -> i32 {
+    return if count > 40 { 1 * count } else { count * 2 };
+}
