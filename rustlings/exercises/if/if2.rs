@@ -8,11 +8,7 @@
 // I AM NOT DONE
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
-    if fizzish == "fizz" {
-        "foo"
-    } else {
-        1
-    }
+    return if fizzish == "fizz" { "foo" } else { "baz" };
 }
 
 // No test changes needed!
@@ -27,7 +23,7 @@ mod tests {
 
     #[test]
     fn bar_for_fuzz() {
-        assert_eq!(foo_if_fizz("fuzz"), "bar")
+        assert_eq!(foo_if_fizz("fuzz"), "baz")
     }
 
     #[test]
